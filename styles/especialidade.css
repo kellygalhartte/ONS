@@ -54,3 +54,50 @@
     background: #257a3e;
     transform: scale(1.05);
 }
+
+.ons-banner {
+    background: linear-gradient(90deg, #1a73e8 0%, #34a853 100%);
+    color: #fff;
+    padding: 2.5rem 0 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(26, 115, 232, 0.15);
+}
+.ons-banner-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+.ons-banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+.ons-banner-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: center;
+    font-size: 1.1rem;
+}
+.ons-banner-info div {
+    margin-bottom: 0.2rem;
+}
+.ons-banner-info i {
+    margin-right: 0.4rem;
+}
+.ons-banner-info a {
+    color: #fff;
+    margin: 0 0.3rem;
+    font-size: 1.3rem;
+    transition: color 0.2s;
+}
+.ons-banner-info a:hover {
+    color: #d2e3fc;
+}
+@media (min-width: 600px) {
+    .ons-banner-info {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
