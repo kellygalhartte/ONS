@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>ONS - Cuidando da Sua Saúde</title>
 </head>
 <body>
@@ -17,6 +17,8 @@
             <ul class="nav-links">
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -25,30 +27,88 @@
 
     <header id="inicio">
         <div class="hero">
-            <h1>Sua Saúde em Primeiro Lugar</h1>
-            <p>Atendimento humanizado com profissionais especializados</p>
-            <button class="btn-primary">Agende sua Consulta</button>
+            <div class="hero-content">
+                <h1><i class="fas fa-stethoscope"></i> Sua Saúde em Primeiro Lugar</h1>
+                <p>Atendimento humanizado com profissionais especializados e tecnologia de ponta.</p>
+                <button class="btn-primary">Agende sua Consulta</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Equipe médica" />
+            </div>
         </div>
     </header>
 
+    <section id="especialidades" class="especialidades">
+        <div class="container">
+            <h2><i class="fas fa-notes-medical"></i> Especialidades</h2>
+            <div class="especialidades-grid">
+                <div class="especialidade-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Cardiologia</h3>
+                    <p>Diagnóstico e tratamento de doenças do coração.</p>
+                </div>
+                <div class="especialidade-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Neurologia</h3>
+                    <p>Cuidados com o sistema nervoso e cérebro.</p>
+                </div>
+                <div class="especialidade-card">
+                    <i class="fas fa-bone"></i>
+                    <h3>Ortopedia</h3>
+                    <p>Tratamento de ossos, músculos e articulações.</p>
+                </div>
+                <div class="especialidade-card">
+                    <i class="fas fa-child"></i>
+                    <h3>Pediatria</h3>
+                    <p>Saúde e bem-estar das crianças.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="servicos" class="services">
         <div class="container">
-            <h2>Nossos Serviços</h2>
+            <h2><i class="fas fa-hand-holding-medical"></i> Nossos Serviços</h2>
             <div class="service-grid">
                 <div class="service-card">
                     <i class="fas fa-user-md"></i>
                     <h3>Consultas</h3>
-                    <p>Atendimento com especialistas qualificados</p>
+                    <p>Atendimento com especialistas qualificados.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-hospital"></i>
                     <h3>Exames</h3>
-                    <p>Equipamentos de última geração</p>
+                    <p>Equipamentos de última geração para diagnósticos precisos.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-ambulance"></i>
                     <h3>Emergência</h3>
-                    <p>Atendimento 24 horas</p>
+                    <p>Atendimento 24 horas para situações de urgência.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-syringe"></i>
+                    <h3>Vacinação</h3>
+                    <p>Vacinas para todas as idades com segurança e conforto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="testimonials">
+        <div class="container">
+            <h2><i class="fas fa-comments"></i> Depoimentos</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"Fui muito bem atendida, equipe atenciosa e estrutura excelente!"</p>
+                    <span>- Maria S.</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Profissionais competentes e ambiente acolhedor. Recomendo!"</p>
+                    <span>- João P.</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Consulta rápida e eficiente, com explicações claras."</p>
+                    <span>- Ana L.</span>
                 </div>
             </div>
         </div>
@@ -58,8 +118,8 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>Sobre a ONS</h2>
-                    <p>Há mais de 20 anos cuidando da saúde das famílias brasileiras com excelência e dedicação.</p>
+                    <h2><i class="fas fa-clinic-medical"></i> Sobre a ONS</h2>
+                    <p>Há mais de 20 anos cuidando da saúde das famílias brasileiras com excelência, dedicação e inovação. Nossa missão é promover bem-estar e qualidade de vida para todos os nossos pacientes.</p>
                     <button class="btn-secondary">Saiba Mais</button>
                 </div>
                 <div class="stats">
@@ -80,17 +140,36 @@
         </div>
     </section>
 
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2><i class="fas fa-envelope-open-text"></i> Fale Conosco</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Sua mensagem" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <h3>ONS Saúde</h3>
-                    <p>Compromisso com sua saúde</p>
+                    <h3><i class="fas fa-heartbeat"></i> ONS Saúde</h3>
+                    <p>Compromisso com sua saúde e bem-estar.</p>
                 </div>
                 <div class="footer-contact">
                     <h4>Contato</h4>
                     <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
                     <p><i class="fas fa-envelope"></i> contato@ons.com.br</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Saúde, 123 - São Paulo, SP</p>
                 </div>
                 <div class="footer-social">
                     <h4>Redes Sociais</h4>
@@ -99,7 +178,11 @@
                     <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ONS Saúde. Todos os direitos reservados.</p>
+            </div>
         </div>
     </footer>
 </body>
-<script src="./scripts/script.js"></script>
+<script src="./scripts/scripts.js"></script>
+</html>
