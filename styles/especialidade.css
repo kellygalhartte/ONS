@@ -1,3 +1,12 @@
+/* Cores principais */
+:root {
+    --primary: #007bff; /* Azul principal */
+    --secondary: #6c757d; /* Cinza */
+    --light: #f8f9fa; /* Fundo claro */
+    --dark: #343a40; /* Texto escuro */
+    --danger: #dc3545; /* Vermelho */
+}
+
 /* Reset e fonte base */
 * {
     margin: 0;
@@ -22,14 +31,14 @@ body {
 
 /* Navbar */
 .navbar {
-    background: rgba(26, 115, 232, 0.95);
+    background: var(--light);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 1rem 0;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 .nav-container {
     display: flex;
@@ -39,7 +48,7 @@ body {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fff;
+    color: var(--primary);
 }
 .nav-links {
     list-style: none;
@@ -49,13 +58,12 @@ body {
     margin-left: 2rem;
 }
 .nav-links li a {
-    color: #fff;
+    color: var(--dark);
     text-decoration: none;
     transition: color 0.3s ease;
 }
-.nav-links li a:hover,
-.nav-links li a.active {
-    color: #ffeb3b;
+.nav-links li a:hover {
+    color: var(--primary);
 }
 
 /* Hero Section */
@@ -79,29 +87,10 @@ body {
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    animation: fadeInDown 1s ease both;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    animation: fadeInUp 1s ease both;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-}
-.hero-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-.hero-buttons .btn-primary,
-.hero-buttons .btn-secondary {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.hero-buttons .btn-primary:hover,
-.hero-buttons .btn-secondary:hover {
-    transform: scale(1.03);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 /* Botões */
@@ -146,7 +135,7 @@ body {
 /* Especialidades Lista */
 .especialidades-lista {
     padding: 4rem 0;
-    background: #f8f9fa;
+    background: var(--light);
 }
 .especialidades-grid {
     display: grid;
@@ -193,10 +182,9 @@ body {
 
 /* Footer */
 footer {
-    background: #1a73e8;
+    background: var(--primary);
     color: #fff;
     padding: 2rem 0;
-    margin-top: 2rem;
     text-align: center;
 }
 .footer-container {
