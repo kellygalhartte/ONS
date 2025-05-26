@@ -393,3 +393,63 @@ footer {
         transform: translateY(0);
     }
 }
+/* style.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary);
+    color: var(--text-color);
+  }
+  
+  header {
+    background-color: var(--primary);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #e0f7fa, #a8edea);
+  }
+  
+  .btn {
+    background-color: var(--accent);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  :root {
+      --primary: #2E8B57;      /* verde saúde */
+      --secondary: #f0f0f0;    /* fundo claro */
+      --accent: #4CAF50;       /* destaque */
+      --text-color: #333333;
+    }
+    
+  
+  
