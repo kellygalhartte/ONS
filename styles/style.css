@@ -376,6 +376,41 @@ footer {
     }
 }
 
+.logo-top {
+    z-index: 2;
+    position: relative;
+    gap: 0.5rem;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.logo-top .fa-heartbeat {
+    vertical-align: middle;
+}
 .logo-top a {
     color: #ffcc00; /* Altere para a cor desejada */
+}
+.ons-yellow {
+    font-size: 2rem;
+    color: #ffcc00;
+}
+.ons-red {
+    font-size: 2rem;
+    color: #dc3545;
+    vertical-align: middle;
+}
+.ons-white {
+    font-size: 2rem;
+    color: #fff;
+}
+.banner-bg {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
 }

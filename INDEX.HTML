@@ -12,37 +12,37 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+    <div class="logo-top d-flex justify-content-center align-items-center gap-2">
+        <span class="fw-bold ons-yellow">(ONS</span>
+        <i class="fas fa-heartbeat ons-red"></i>
+        <span class="fw-bold ons-white">Saúde)</span>
+    </div>
     <header id="inicio" class="bg-primary text-white py-0 position-relative overflow-hidden">
         <!-- Logo acima do Banner -->
-        <div class="logo-top text-center py-2" style="z-index:2; position: relative;">
-            <a href="#" style="font-size:2rem; text-decoration:none;">
-                <i class="fas fa-heartbeat text-danger me-2"></i>
-                <span class="fw-bold">ONS Saúde</span>
-            </a>
-        </div>
         <!-- Imagem de fundo do banner -->
-        <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index:1;">
+        <div class="banner-bg">
             <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
                  alt="Equipe médica"
-                 class="w-100 h-100 object-fit-cover"
-                 style="opacity: 0.25;">
+                 class="banner-img">
         </div>
         <!-- Navbar com tópicos em linha -->
-        <nav class="navbar" style="z-index:2; position: relative;">
-            <div class="container nav-container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-                        <li class="nav-item"><a class="nav-link" href="especialidades.html">Especialidades</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                    </ul>
+        <nav class="navbar bg-primary" style="z-index:2; position: relative;">
+            <div class="container nav-container d-flex align-items-center justify-content-between py-2">
+                <!-- Logo padronizado -->
+                <div class="d-flex align-items-center gap-2">
+                    <span class="fw-bold ons-yellow" style="font-size:2rem;">(ONS</span>
+                    <i class="fas fa-heartbeat ons-red" style="font-size:2rem;"></i>
+                    <span class="fw-bold ons-white" style="font-size:2rem;">Saúde)</span>
                 </div>
+                <!-- Menu horizontal -->
+                <ul class="navbar-nav d-flex flex-row gap-3 mb-0">
+                    <li class="nav-item"><a class="nav-link text-white" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="especialidades.html">Especialidades</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+                </ul>
             </div>
         </nav>
         <!-- Conteúdo do Banner -->
