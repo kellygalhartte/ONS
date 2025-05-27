@@ -375,3 +375,7 @@ footer {
         gap: 1rem;
     }
 }
+
+.logo-top a {
+    color: #ffcc00; /* Altere para a cor desejada */
+}
