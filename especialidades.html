@@ -1,154 +1,151 @@
-/* Cores principais */
-:root {ang="pt-BR">
-    --primary: #007bff; /* Azul principal */
-    --secondary: #6c757d; /* Cinza */
-    --light: #f8f9fa; /* Fundo claro */h=device-width, initial-scale=1.0">
-    --dark: #343a40; /* Texto escuro */title>
-    --danger: #dc3545; /* Vermelho */yles/especialidade.css">
-}   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="import" href="./INDEX.HTML">
-/* Reset e fonte base */
-* {dy>
-    margin: 0;="navbar">
-    padding: 0;ass="container nav-container">
-    box-sizing: border-box;o">
-}               <i class="fas fa-heartbeat"></i>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONS - Especialidades</title>
+    <link rel="stylesheet" href="./styles/especialidade.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
                 <span>ONS Saúde</span>
-body {      </div>
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;a href="home.html" class="active">Início</a></li>
-    color: #333;<li><a href="#especialidades">Especialidades</a></li>
-    background: #f2f4f8;ref="#sobre">Sobre</a></li>
-    padding-top: 0; /* Removido o padding-top */
-}       </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html" class="active">Início</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
     </nav>
-/* Container Geral */
-.container {class="hero" id="inicio">
-    width: 90%;ass="hero-content">
-    max-width: 1200px;úde em Primeiro Lugar</h1>
-    margin: 0 auto;dimento humanizado com profissionais especializados</p>
-}           <div class="hero-buttons">
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Sua Saúde em Primeiro Lugar</h1>
+            <p>Atendimento humanizado com profissionais especializados</p>
+            <div class="hero-buttons">
                 <a href="index.html#contato" class="btn-primary">Agende sua Consulta</a>
-/* Navbar */    <a href="#especialidades" class="btn-secondary">Veja Nossas Especialidades</a>
-.navbar {   </div>
-    background: var(--light);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 1rem 0;
-    position: fixed;eader fixo -->
-    top: 0;ass="main-content">
-    width: 100%;teúdo da página -->
-    z-index: 1001;
-}       <!-- Seção Especialidades -->
-.nav-container { class="especialidades-lista" id="especialidades">
-    display: flex;lass="container">
-    justify-content: space-between;lidades-grid">
-    align-items: center; class="especialidade-card">
-}                       <i class="fas fa-user-md"></i>
-.logo {                 <h3>Clínica Geral</h3>
-    font-size: 1.5rem;  <p>Atendimento completo para avaliação e acompanhamento da saúde.</p>
-    font-weight: bold;div>
-    color: var(--primary);lass="especialidade-card">
-}                       <i class="fas fa-heart"></i>
-.nav-links {            <h3>Cardiologia</h3>
-    list-style: none;   <p>Prevenção, diagnóstico e tratamento de doenças do coração.</p>
-    display: flex;  </div>
-}                   <div class="especialidade-card">
-.nav-links li {         <i class="fas fa-brain"></i>
-    margin-left: 2rem;  <h3>Neurologia</h3>
-}                       <p>Cuidados com o sistema nervoso e doenças neurológicas.</p>
-.nav-links li a {   </div>
-    color: var(--dark);v class="especialidade-card">
-    text-decoration: none; class="fas fa-bone"></i>
-    transition: color 0.3s ease;pedia</h3>
-}                       <p>Tratamento de ossos, músculos e articulações.</p>
-.nav-links li a:hover {iv>
-    color: var(--primary);lass="especialidade-card">
-}                       <i class="fas fa-child"></i>
-                        <h3>Pediatria</h3>
-/* Hero Section */      <p>Saúde e bem-estar das crianças e adolescentes.</p>
-.hero {             </div>
-    position: relative; /* Agora o header acompanhará a rolagem */
-    top: auto;          <i class="fas fa-female"></i>
-    left: 0;            <h3>Ginecologia</h3>
-    width: 100%;        <p>Saúde da mulher em todas as fases da vida.</p>
-    height: 280px;   /* Valor aumentado de 220px para 280px */
-    background: #1976d2;  /* Cor sólida para o banner */
-    color: #fff;        <i class="fas fa-lungs"></i>
-    text-align: center; <h3>Pneumologia</h3>
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);ento de doenças respiratórias.</p>
-    z-index: 900;   </div>
-    display: flex;  <div class="especialidade-card">
-    align-items: center;<i class="fas fa-eye"></i>
-    justify-content: center;Oftalmologia</h3>
-    padding: 0;         <p>Cuidados com a visão e saúde ocular.</p>
-    margin: 0;      </div>
-    margin-top: 60px;div class="especialidade-card">
-}                       <i class="fas fa-tooth"></i>
-.hero .hero-content h1 {<h3>Odontologia</h3>
-    font-size: 3rem;    <p>Tratamentos dentários e saúde bucal.</p>
-    font-weight: bold;div>
-    color: #fff;    <div class="especialidade-card">
-    text-shadow: 3px 3px 10px #000, 0 2px 8px #1976d2;
-    letter-spacing: 1px;<h3>Endocrinologia</h3>
-}                       <p>Tratamento de distúrbios hormonais e metabólicos.</p>
-.hero .hero-content p {iv>
-    color: #fff;    <div class="especialidade-card">
-    font-weight: bold;  <i class="fas fa-allergies"></i>
-    text-shadow: none; /* Removed text shadow */
-    letter-spacing: 1px;<p>Diagnóstico e tratamento de alergias.</p>
-}                   </div>
-.hero-content .btn-primary,ass="especialidade-card">
-.hero-content .btn-secondary,ss="fas fa-venus-mars"></i>
-.btn-primary,<h3>Urologia</h3>
-.btn-secondary {a urinário e reprodutor masculino.</p>
-    display: inline-block;div>
-    padding: 12px 30px;
-    margin: 10px;>
-    background: #ffffff;
-    color: #000000;
-    font-weight: bold;
-    text-decoration: none;       <section class="about" id="sobre">
-    border-radius: 25px;">
-    transition: all 0.3s ease;e</h2>
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);                <p>A ONS Saúde é dedicada a proporcionar o melhor atendimento com tecnologia e humanização, priorizando a saúde e o bem-estar de nossos pacientes.</p>
-    border: none;            </div>
-}
-.hero-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;       <div class="container footer-container">
-    margin-top: 25px;            <div class="footer-info">
-}    <h3>ONS Saúde</h3>
-.hero-content .btn-primary:hover, com sua saúde</p>
-.hero-content .btn-secondary:hover {
-    background: #f0f0f0;class="footer-contact">
-    transform: translateY(-2px);ato</h4>
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);i class="fas fa-phone"></i> (11) 1234-5678</p>
-    color: #000000;i class="fas fa-envelope"></i> contato@ons.com.br</p>
-}
-.hero .hero-buttons {>
-    margin-top: 20px; /* Ajuste esse valor conforme sua necessidade */               <h4>Redes Sociais</h4>
-}  <a href="#"><i class="fab fa-facebook-f"></i></a>
-"#"><i class="fab fa-instagram"></i></a>
-/* Botões */<a href="#"><i class="fab fa-linkedin-in"></i></a>
-.btn-primary, .btn-secondary {           </div>
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 50px;   <script src="./scripts/especialidades.js"></script>
-    font-size: 1rem;
-    cursor: pointer;
-    text-decoration: none;
-    transition: transform 0.3s,  0.3s;
-}
-.btn-primary {
-    background: #ff5722;
-    color: #fff;
-}
-.btn-primary:hover {
-    transform: scale(1.05);
-}
-.btn-secondary {
-    background: #34a853;    color: #fff;}.btn-secondary:hover {    background: #2e7d32;    transform: scale(1.05);}/* Page Header */.page-header {    background: linear-gradient(135deg, #1a73e8, #34a853);    color: #fff;    padding: 4rem 0 2rem 0;    text-align: center;    margin-top: 60px;}.page-header h1 {    font-size: 2.5rem;    margin-bottom: 0.5rem;}/* Especialidades Lista */.especialidades-lista {    background: linear-gradient(135deg, #f8f9fa 0%, #e3e6ff 100%);    padding: 6rem 0;    margin-top: 0; /* Removido o margin-top grande */    position: relative;    z-index: 1;    background-color: #fff;}.especialidades-grid {    display: grid;    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));    gap: 2.5rem;    margin-top: 2rem;}.especialidade-card {    background: #e3f2fd;  /* fundo único */    border-radius: 18px;    box-shadow: 0 6px 24px rgba(0,0,0,0.13);    padding: 2.5rem 1.2rem;    text-align: center;    transition: transform 0.3s, box-shadow 0.3s;    margin-bottom: 1.5rem;    border: 2px solid #fff;    overflow: hidden;}.especialidade-card:hover {    transform: translateY(-10px);    box-shadow: 0 15px 40px rgba(0, 123, 255, 0.2);}.especialidade-card i {    font-size: 2.7rem;    margin-bottom: 1.2rem;    text-shadow: 2px 2px 8px #000, 0 2px 8px #42a5f5;}.especialidade-card i.fa-user-md { color: #007bff; }      /* Ex.: Clínica Geral – azul */.especialidade-card i.fa-heart { color: #dc3545; }         /* Ex.: Cardiologia – vermelho */.especialidade-card i.fa-brain { color: #ffc107; }         /* Ex.: Neurologia – amarelo */.especialidade-card i.fa-bone { color: #28a745; }          /* Ex.: Ortopedia – verde */.especialidade-card i.fa-child { color: #fd7e14; }         /* Ex.: Pediatria – laranja */.especialidade-card i.fa-female { color: #e83e8c; }          /* Ex.: Ginecologia – rosa */.especialidade-card i.fa-lungs { color: #6f42c1; }           /* Ex.: Pneumologia – roxo */.especialidade-card i.fa-eye { color: #17a2b8; }             /* Ex.: Oftalmologia – ciano */.especialidade-card i.fa-tooth { color: #20c997; }           /* Ex.: Odontologia – teal */.especialidade-card i.fa-dna { color: #343a40; }             /* Ex.: Endocrinologia – escuro */.especialidade-card i.fa-allergies { color: #343a40; }        /* Ex.: Alergologia – escuro */.especialidade-card i.fa-venus-mars { color: #343a40; }        /* Ex.: Urologia – escuro */.especialidade-card h3 {    font-size: 1.35rem;    font-weight: bold;    margin-bottom: 0.7rem;    color: #1976d2;    /* text-shadow removido */    letter-spacing: 1px;}.especialidade-card p {    color: #1976d2;    /* text-shadow removido */    font-size: 1.05rem;}/* Footer */footer {    background: var(--primary);    color: #fff;    padding: 2rem 0;    text-align: center;}.footer-container {    display: flex;    flex-wrap: wrap;    justify-content: space-around;    align-items: flex-start;    padding-top: 1rem;    border-top: 1px solid rgba(23, 20, 228, 0.945);    padding: 3rem 0;}.footer-info, .footer-contact, .footer-social {    margin: 1rem;}.footer-info h3 {    font-size: 1.8rem;    margin-bottom: 1rem;}.footer-social a {    display: inline-block;    width: 40px;    height: 40px;    line-height: 40px;    background: rgba(255, 255, 255, 0.1);    border-radius: 50%;    margin: 0 10px;    transition: all 0.3s ease;    color: #ffeb3b;    margin-right: 1rem;    font-size: 1.2rem;}.footer-social a:hover {    background: white;    color: var(--primary);    transform: translateY(-3px);}/* Animações */@keyframes fadeInDown {    0% {        opacity: 0;        transform: translateY(-20px);    }    100% {        opacity: 1;        transform: translateY(0);    }}@keyframes fadeInUp {    0% {        opacity: 0;        transform: translateY(20px);    }    100% {        opacity: 1;        transform: translateY(0);    }}/* Responsividade */@media (max-width: 768px) {    .nav-links {        flex-direction: column;        gap: 1rem;    }    .hero-content h1 {        font-size: 2.5rem;    }    .hero-content p {        font-size: 1rem;    }}/* Main Content */.main-content {    padding-top: calc(64px + 220px); /* Altura da navbar + altura do header fixo */}
+                <a href="#especialidades" class="btn-secondary">Veja Nossas Especialidades</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Especialidades -->
+    <section class="especialidades-lista" id="especialidades">
+        <div class="container">
+            <h2 class="section-title">Nossas Especialidades</h2>
+            <div class="especialidades-grid">
+                <div class="especialidade-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Cardiologia</h3>
+                    <p>Cuidados especializados para seu coração</p>
+                </div>
+                <div class="especialidade-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Neurologia</h3>
+                    <p>Tratamento de doenças neurológicas</p>
+                </div>
+                <div class="especialidade-card">
+                    <i class="fas fa-bone"></i>
+                    <h3>Ortopedia</h3>
+                    <p>Cuidando da sua estrutura óssea</p>
+                </div>
+                <div class="especialidade-card">
+                    <i class="fas fa-lungs"></i>
+                    <h3>Pneumologia</h3>
+                    <p>Especialistas em saúde respiratória</p>
+                </div>
+                <div class="especialidade-card">
+                    <i class="fas fa-stomach"></i>
+                    <h3>Gastroenterologia</h3>
+                    <p>Cuidando do seu sistema digestivo</p>
+                </div>
+                <div class="especialidade-card">
+                    <i class="fas fa-kidneys"></i>
+                    <h3>Nefrologia</h3>
+                    <p>Tratamento de doenças renais</p>
+                </div>
+                <div class="especialidade-card">
+                    <i class="fas fa-child"></i>
+                    <h3>Pediatria</h3>
+                    <p>Cuidados especiais para crianças</p>
+                </div>
+                <div class="especialidade-card">
+                    <i class="fas fa-venus"></i>
+                    <h3>Ginecologia</h3>
+                    <p>Saúde da mulher em primeiro lugar</p>
+                </div>
+                <div class="especialidade-card">
+                    <i class="fas fa-eye"></i>
+                    <h3>Oftalmologia</h3>
+                    <p>Cuidando da sua saúde visual</p>
+                </div>
+                <div class="especialidade-card">
+                    <i class="fas fa-tooth"></i>
+                    <h3>Odontologia</h3>
+                    <p>Seu sorriso mais bonito e saudável</p>
+                </div>
+                <div class="especialidade-card">
+                    <i class="fas fa-stethoscope"></i>
+                    <h3>Clínica Geral</h3>
+                    <p>Atendimento médico completo</p>
+                </div>
+                <div class="especialidade-card">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Endocrinologia</h3>
+                    <p>Controle hormonal e metabólico</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <h2>Sobre o ONS Saúde</h2>
+            <p>A ONS Saúde é dedicada a proporcionar o melhor atendimento com tecnologia e humanização, priorizando a saúde e o bem-estar de nossos pacientes.</p>
+        </div>
+    </section>
+
+    <!-- Seção Fale Conosco -->
+    <section class="contact-banner" id="contato">
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <p>Entre em contato conosco para mais informações e agendamentos</p>
+            <a href="mailto:contato@ons.com.br" class="btn-primary">Envie um Email</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>ONS Saúde</h3>
+                <p>Compromisso com sua saúde</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                <p><i class="fas fa-envelope"></i> contato@ons.com.br</p>
+            </div>
+            <div class="footer-social">
+                <h4>Redes Sociais</h4>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts/especialidades.js"></script>
+</body>
+</html>
 
 
 
