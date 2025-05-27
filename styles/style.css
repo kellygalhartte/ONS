@@ -112,67 +112,79 @@
 
 /* Navbar fixa no topo */
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #f8f9fa; /* fundo que combina com as categorias */
+    background-color: var(--light);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1050;
+    padding: 0.5rem 0;
+    position: relative;
+}
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .navbar .navbar-brand {
     font-size: 1.7rem;
     font-weight: bold;
     color: var(--primary);
 }
-.navbar .nav-link {
-    color: #343a40;  /* letras em tom mais escuro */
+.nav-links, .navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+.navbar-nav li a {
+    color: var(--dark);
+    text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
-.navbar .nav-link:hover {
-    color: #212121;
+.navbar-nav li a:hover {
+    color: var(--primary);
 }
 
 /* Banner fixo logo abaixo da navbar */
 header#inicio {
-    position: fixed;
-    top: 56px; /* ajuste de acordo com a altura da navbar */
+    position: relative;
     left: 0;
     width: 100%;
-    min-height: 350px;
-    background: #e3f2fd;  /* cor sólida combinando com os cards de categorias */
+    height: 90px;  /* Altura atual do banner */
+    background: #1976d2;
+    color: #fff;
     overflow: hidden;
-    z-index: 1040;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.15);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+    z-index: 900;
+    margin-top: -50px; /* Valor negativo para subir o banner */
 }
-header#inicio::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.05); /* leve sombreamento */
-    z-index: 1;
-}
+header#inicio .hero-content,
 header#inicio .container {
-    position: relative;
-    z-index: 2;
-    text-align: center;
+    text-align: left;
 }
-header#inicio h1,
-header#inicio p {
-    color: #212121;  /* textos com tom mais escuro para bom contraste */
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+header#inicio .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    /* Remova text-shadows indesejados se preferir um visual mais limpo */
+    text-shadow: none;
+}
+header#inicio .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-shadow: none;
+}
+header#inicio .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 15px; /* Adicionado espaço acima dos botões */
 }
 
-/* Espaçamento para o conteúdo principal, evitando que fique oculto */
+/* Espaçamento para o conteúdo principal */
 .main-content {
-    padding-top: calc(56px + 350px); /* altura da navbar + banner */
+    padding-top: calc(64px + 260px); /* Soma da altura da navbar e banner fixo */
 }
 
 /* Botões */

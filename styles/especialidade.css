@@ -68,12 +68,12 @@ body {
 
 /* Hero Section */
 .hero {
-    position: fixed;
-    top: 64px; /* altura da navbar */
+    position: relative; /* Agora o header acompanhará a rolagem */
+    top: auto;
     left: 0;
     width: 100%;
-    height: 220px; /* altura do banner */
-    background: #1976d2;  /* cor sólida para o banner */
+    height: 280px;   /* Valor aumentado de 220px para 280px */
+    background: #1976d2;  /* Cor sólida para o banner */
     color: #fff;
     text-align: center;
     box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
@@ -96,6 +96,9 @@ body {
     font-weight: bold;
     text-shadow: 2px 2px 8px #000, 0 2px 8px #1976d2;
     letter-spacing: 1px;
+}
+.hero .hero-buttons {
+    margin-top: 20px; /* Ajuste esse valor conforme sua necessidade */
 }
 
 /* Botões */
@@ -285,4 +288,9 @@ footer {
 .contact-banner .btn-primary:hover {
     transform: scale(1.05);
     background: #e64a19;
+}
+
+/* Main Content */
+.main-content {
+    padding-top: calc(64px + 220px); /* Altura da navbar + altura do header fixo */
 }
