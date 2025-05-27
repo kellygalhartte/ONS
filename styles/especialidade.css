@@ -67,13 +67,16 @@ body {
 
 /* Hero Section */
 .hero {
-    position: relative;
-    top: 0;
+    position: relative; /* Agora o header acompanhará a rolagem */
+    top: auto;
+    left: 0;
     width: 100%;
-    height: 400px;
-    background: var(--primary); /* Changed to solid blue background */
-    background-size: cover;
-    background-position: center;
+    height: 280px;   /* Valor aumentado de 220px para 280px */
+    background: #1976d2;  /* Cor sólida para o banner */
+    color: #fff;
+    text-align: center;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+    z-index: 900;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,34 +84,18 @@ body {
     margin: 0;
     margin-top: 60px;
 }
-
-.hero-content {
-    text-align: center;
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.hero-content h1 {
+.hero .hero-content h1 {
     font-size: 3rem;
     font-weight: bold;
-    text-align: center;
-    color: white;
-    padding: 15px 30px;
-    margin-bottom: 1rem;
-    text-shadow: none;
+    color: #fff;
+    text-shadow: 3px 3px 10px #000, 0 2px 8px #1976d2;
     letter-spacing: 1px;
-    display: block;
-    width: 100%;
-    max-width: 800px;
 }
-
-.hero-content p {
-    color: white; /* Changed to white */
+.hero .hero-content p {
+    color: #fff;
     font-weight: bold;
     text-shadow: none; /* Removed text shadow */
     letter-spacing: 1px;
-    margin-bottom: 2.5rem;
 }
 .hero-content .btn-primary,
 .hero-content .btn-secondary {
@@ -125,6 +112,8 @@ body {
 .hero-content .btn-secondary:hover {
     background: #bbdefb;
     color: #000000; /* Keep black on hover */
+.hero .hero-buttons {
+    margin-top: 20px; /* Ajuste esse valor conforme sua necessidade */
 }
 
 /* Botões */
@@ -182,13 +171,14 @@ body {
     margin-top: 2rem;
 }
 .especialidade-card {
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 123, 255, 0.1);
-    padding: 2rem;
-    transition: all 0.4s ease;
-    border: none;
-    position: relative;
+    background: #e3f2fd;  /* fundo único */
+    border-radius: 18px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.13);
+    padding: 2.5rem 1.2rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 1.5rem;
+    border: 2px solid #fff;
     overflow: hidden;
 }
 .especialidade-card:hover {
@@ -196,22 +186,34 @@ body {
     box-shadow: 0 15px 40px rgba(0, 123, 255, 0.2);
 }
 .especialidade-card i {
-    font-size: 3.5rem;
-    color: var(--primary);
-    margin-bottom: 1.5rem;
-    text-shadow: none;
+    font-size: 2.7rem;
+    margin-bottom: 1.2rem;
+    text-shadow: 2px 2px 8px #000, 0 2px 8px #42a5f5;
 }
+.especialidade-card i.fa-user-md { color: #007bff; }      /* Ex.: Clínica Geral – azul */
+.especialidade-card i.fa-heart { color: #dc3545; }         /* Ex.: Cardiologia – vermelho */
+.especialidade-card i.fa-brain { color: #ffc107; }         /* Ex.: Neurologia – amarelo */
+.especialidade-card i.fa-bone { color: #28a745; }          /* Ex.: Ortopedia – verde */
+.especialidade-card i.fa-child { color: #fd7e14; }         /* Ex.: Pediatria – laranja */
+.especialidade-card i.fa-female { color: #e83e8c; }          /* Ex.: Ginecologia – rosa */
+.especialidade-card i.fa-lungs { color: #6f42c1; }           /* Ex.: Pneumologia – roxo */
+.especialidade-card i.fa-eye { color: #17a2b8; }             /* Ex.: Oftalmologia – ciano */
+.especialidade-card i.fa-tooth { color: #20c997; }           /* Ex.: Odontologia – teal */
+.especialidade-card i.fa-dna { color: #343a40; }             /* Ex.: Endocrinologia – escuro */
+.especialidade-card i.fa-allergies { color: #343a40; }        /* Ex.: Alergologia – escuro */
+.especialidade-card i.fa-venus-mars { color: #343a40; }        /* Ex.: Urologia – escuro */
 .especialidade-card h3 {
-    color: var(--dark);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    text-shadow: none;
+    font-size: 1.35rem;
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+    color: #1976d2;
+    /* text-shadow removido */
+    letter-spacing: 1px;
 }
 .especialidade-card p {
-    color: var(--secondary);
-    font-size: 1rem;
-    line-height: 1.6;
-    text-shadow: none;
+    color: #1976d2;
+    /* text-shadow removido */
+    font-size: 1.05rem;
 }
 
 /* Footer */
@@ -320,9 +322,7 @@ footer {
     background: #e64a19;
 }
 
-
-
-
-
-
-
+/* Main Content */
+.main-content {
+    padding-top: calc(64px + 220px); /* Altura da navbar + altura do header fixo */
+}
