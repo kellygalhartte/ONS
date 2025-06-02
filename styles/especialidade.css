@@ -19,7 +19,6 @@ body {
     line-height: 1.6;
     color: #333;
     background: #f2f4f8;
-    padding-top: 300px; /* altura da navbar + hero/banner */
 }
 
 /* Container Geral */
@@ -332,7 +331,17 @@ footer {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
 }
+.logo {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
 .hero {
     margin-top: 0 !important;
     padding-top: 0 !important;
+}
+
+/* Remove qualquer espaçamento extra entre logo e banner */
+.nav-container {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
