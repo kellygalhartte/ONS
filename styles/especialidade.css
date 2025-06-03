@@ -19,7 +19,6 @@ body {
     line-height: 1.6;
     color: #333;
     background: #f2f4f8;
-    padding-top: 300px; /* altura da navbar + hero/banner */
 }
 
 /* Container Geral */
@@ -115,13 +114,6 @@ body {
     transition: background 0.3s, color 0.3s;
 }
 .hero-content .btn-primary:hover,
-.hero-content .btn-secondary:hover {
-    background: #bbdefb;
-    color: #000000; /* Keep black on hover */
-.hero .hero-buttons {
-    margin-top: 20px; /* Ajuste esse valor conforme sua necessidade */
-}
-
 /* Botões */
 .btn-primary, .btn-secondary {
     padding: 1rem 2rem;
