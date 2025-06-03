@@ -12,48 +12,56 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <i class="fas fa-heartbeat text-danger me-2"></i>
-                <span class="fw-bold">ONS Saúde</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                    <li class="nav-item"><a class="nav-link" href="especialidades.html">especialidades</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header id="inicio" class="bg-primary text-white py-0 position-relative overflow-hidden" style="min-height: 350px;">
-        <div class="position-absolute top-0 start-0 w-100 h-100">
+    <div class="logo-top d-flex justify-content-center align-items-center gap-2">
+        <span class="fw-bold ons-yellow">(ONS</span>
+        <i class="fas fa-heartbeat ons-red"></i>
+        <span class="fw-bold ons-white">Saúde)</span>
+    </div>
+    <header id="inicio" class="bg-primary text-white py-0 position-relative overflow-hidden">
+        <!-- Logo acima do Banner -->
+        <!-- Imagem de fundo do banner -->
+        <div class="banner-bg">
             <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
                  alt="Equipe médica"
-                 class="w-100 h-100 object-fit-cover"
-                 style="opacity: 0.35;">
+                 class="banner-img">
         </div>
-        <div class="container position-relative" style="z-index: 2;">
-            <div class="row align-items-center" style="min-height: 350px;">
-                <div class="col-md-7 py-5">
-                    <h1 class="display-5 fw-bold"><i class="fas fa-stethoscope"></i> Sua Saúde em Primeiro Lugar</h1>
+        <!-- Navbar com tópicos em linha -->
+        <nav class="navbar bg-primary" style="z-index:2; position: relative;">
+            <div class="container nav-container d-flex align-items-center justify-content-between py-2">
+                <!-- Logo padronizado -->
+                <div class="d-flex align-items-center gap-2">
+                    <span class="fw-bold ons-yellow" style="font-size:2rem;">(ONS</span>
+                    <i class="fas fa-heartbeat ons-red" style="font-size:2rem;"></i>
+                    <span class="fw-bold ons-white" style="font-size:2rem;">Saúde)</span>
+                </div>
+                <!-- Menu horizontal -->
+                <ul class="navbar-nav d-flex flex-row gap-3 mb-0">
+                    <li class="nav-item"><a class="nav-link text-white" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="especialidades.html">Especialidades</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Conteúdo do Banner -->
+        <div class="container position-relative" style="z-index:2;">
+            <div class="row align-items-center justify-content-center" style="min-height:380px;">
+                <div class="col-md-8 text-center py-5">
+                    <h1 class="display-4 fw-bold">
+                        <i class="fas fa-stethoscope"></i> Sua Saúde em Primeiro Lugar
+                    </h1>
                     <p class="lead">Atendimento humanizado com profissionais especializados e tecnologia de ponta.</p>
-                    <a href="#contato" class="btn btn-light btn-lg mt-3"><i class="fas fa-calendar-check"></i> Agende sua Consulta</a>
+                    <a href="#contato" class="btn btn-light btn-lg mt-4">
+                        <i class="fas fa-calendar-check"></i> Agende sua Consulta
+                    </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Especialidades -->
+    <!-- Especialidades logo abaixo do banner -->
     <section id="especialidades" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-5"><i class="fas fa-notes-medical text-primary"></i> Especialidades</h2>
@@ -98,127 +106,127 @@
         </div>
     </section>
 
-    <!-- Serviços -->
-    <section id="servicos" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5"><i class="fas fa-hand-holding-medical text-primary"></i> Nossos Serviços</h2>
-            <div class="row g-4">
-                <div class="col-md-3">
-                    <div class="card h-100 text-center border-0 shadow service-card">
-                        <div class="card-body">
-                            <i class="fas fa-user-md fa-2x text-primary mb-3"></i>
-                            <h5 class="card-title">Consultas</h5>
-                            <p class="card-text">Atendimento com especialistas qualificados.</p>
+        <!-- Serviços -->
+        <section id="servicos" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5"><i class="fas fa-hand-holding-medical text-primary"></i> Nossos Serviços</h2>
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center border-0 shadow service-card">
+                            <div class="card-body">
+                                <i class="fas fa-user-md fa-2x text-primary mb-3"></i>
+                                <h5 class="card-title">Consultas</h5>
+                                <p class="card-text">Atendimento com especialistas qualificados.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card h-100 text-center border-0 shadow service-card">
-                        <div class="card-body">
-                            <i class="fas fa-hospital fa-2x text-info mb-3"></i>
-                            <h5 class="card-title">Exames</h5>
-                            <p class="card-text">Equipamentos de última geração para diagnósticos precisos.</p>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center border-0 shadow service-card">
+                            <div class="card-body">
+                                <i class="fas fa-hospital fa-2x text-info mb-3"></i>
+                                <h5 class="card-title">Exames</h5>
+                                <p class="card-text">Equipamentos de última geração para diagnósticos precisos.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card h-100 text-center border-0 shadow service-card">
-                        <div class="card-body">
-                            <i class="fas fa-ambulance fa-2x text-danger mb-3"></i>
-                            <h5 class="card-title">Emergência</h5>
-                            <p class="card-text">Atendimento 24 horas para situações de urgência.</p>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center border-0 shadow service-card">
+                            <div class="card-body">
+                                <i class="fas fa-ambulance fa-2x text-danger mb-3"></i>
+                                <h5 class="card-title">Emergência</h5>
+                                <p class="card-text">Atendimento 24 horas para situações de urgência.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card h-100 text-center border-0 shadow service-card">
-                        <div class="card-body">
-                            <i class="fas fa-syringe fa-2x text-success mb-3"></i>
-                            <h5 class="card-title">Vacinação</h5>
-                            <p class="card-text">Vacinas para todas as idades com segurança e conforto.</p>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center border-0 shadow service-card">
+                            <div class="card-body">
+                                <i class="fas fa-syringe fa-2x text-success mb-3"></i>
+                                <h5 class="card-title">Vacinação</h5>
+                                <p class="card-text">Vacinas para todas as idades com segurança e conforto.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Depoimentos -->
-    <section id="depoimentos" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5"><i class="fas fa-comments text-primary"></i> Depoimentos</h2>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-4">
-                    <div class="card border-0 shadow h-100 testimonial-card">
-                        <div class="card-body">
-                            <p class="card-text">"Fui muito bem atendida, equipe atenciosa e estrutura excelente!"</p>
-                            <div class="d-flex align-items-center mt-3">
-                                <i class="fas fa-user-circle fa-2x text-secondary me-2"></i>
-                                <span>- Maria S.</span>
+        <!-- Depoimentos -->
+        <section id="depoimentos" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5"><i class="fas fa-comments text-primary"></i> Depoimentos</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow h-100 testimonial-card">
+                            <div class="card-body">
+                                <p class="card-text">"Fui muito bem atendida, equipe atenciosa e estrutura excelente!"</p>
+                                <div class="d-flex align-items-center mt-3">
+                                    <i class="fas fa-user-circle fa-2x text-secondary me-2"></i>
+                                    <span>- Maria S.</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 shadow h-100 testimonial-card">
-                        <div class="card-body">
-                            <p class="card-text">"Profissionais competentes e ambiente acolhedor. Recomendo!"</p>
-                            <div class="d-flex align-items-center mt-3">
-                                <i class="fas fa-user-circle fa-2x text-secondary me-2"></i>
-                                <span>- João P.</span>
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow h-100 testimonial-card">
+                            <div class="card-body">
+                                <p class="card-text">"Profissionais competentes e ambiente acolhedor. Recomendo!"</p>
+                                <div class="d-flex align-items-center mt-3">
+                                    <i class="fas fa-user-circle fa-2x text-secondary me-2"></i>
+                                    <span>- João P.</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 shadow h-100 testimonial-card">
-                        <div class="card-body">
-                            <p class="card-text">"Consulta rápida e eficiente, com explicações claras."</p>
-                            <div class="d-flex align-items-center mt-3">
-                                <i class="fas fa-user-circle fa-2x text-secondary me-2"></i>
-                                <span>- Ana L.</span>
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow h-100 testimonial-card">
+                            <div class="card-body">
+                                <p class="card-text">"Consulta rápida e eficiente, com explicações claras."</p>
+                                <div class="d-flex align-items-center mt-3">
+                                    <i class="fas fa-user-circle fa-2x text-secondary me-2"></i>
+                                    <span>- Ana L.</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Sobre -->
-    <section id="sobre" class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-7">
-                    <h2 class="mb-4"><i class="fas fa-clinic-medical text-primary"></i> Sobre a ONS</h2>
-                    <p>Há mais de 20 anos cuidando da saúde das famílias brasileiras com excelência, dedicação e inovação. Nossa missão é promover bem-estar e qualidade de vida para todos os nossos pacientes.</p>
-                    <a href="#contato" class="btn btn-outline-primary mt-3">Saiba Mais</a>
-                </div>
-                <div class="col-md-5">
-                    <div class="row text-center">
-                        <div class="col-4">
-                            <div class="bg-primary text-white rounded p-3 mb-2 stat-item">
-                                <h3>20+</h3>
-                                <p class="mb-0">Anos de Experiência</p>
+        <!-- Sobre -->
+        <section id="sobre" class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <h2 class="mb-4"><i class="fas fa-clinic-medical text-primary"></i> Sobre a ONS</h2>
+                        <p>Há mais de 20 anos cuidando da saúde das famílias brasileiras com excelência, dedicação e inovação. Nossa missão é promover bem-estar e qualidade de vida para todos os nossos pacientes.</p>
+                        <a href="#contato" class="btn btn-outline-primary mt-3">Saiba Mais</a>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="bg-primary text-white rounded p-3 mb-2 stat-item">
+                                    <h3>20+</h3>
+                                    <p class="mb-0">Anos de Experiência</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="bg-success text-white rounded p-3 mb-2 stat-item">
-                                <h3>50k+</h3>
-                                <p class="mb-0">Pacientes</p>
+                            <div class="col-4">
+                                <div class="bg-success text-white rounded p-3 mb-2 stat-item">
+                                    <h3>50k+</h3>
+                                    <p class="mb-0">Pacientes</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="bg-info text-white rounded p-3 mb-2 stat-item">
-                                <h3>100+</h3>
-                                <p class="mb-0">Especialistas</p>
+                            <div class="col-4">
+                                <div class="bg-info text-white rounded p-3 mb-2 stat-item">
+                                    <h3>100+</h3>
+                                    <p class="mb-0">Especialistas</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     <!-- Contato -->
     <section id="contato" class="py-5 bg-light">
@@ -282,3 +290,4 @@
     </script>
 </body>
 </html>
+
