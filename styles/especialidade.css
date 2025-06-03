@@ -255,6 +255,30 @@ body {
     transform: scale(1.2);
 }
 
+/* Exemplo de figura padrão para categorias sem ícone */
+.especialidade-card:not(:has(i))::before {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1.5rem auto;
+    background: url('https://cdn-icons-png.flaticon.com/512/2991/2991108.png') no-repeat center center;
+    background-size: contain;
+    opacity: 0.7;
+}
+
+/* Ícone padrão para categorias sem ícone */
+.categoria-card:not(:has(i))::before {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 1rem auto;
+    background: url('https://cdn-icons-png.flaticon.com/512/2991/2991108.png') no-repeat center center;
+    background-size: contain;
+    opacity: 0.7;
+}
+
 /* Enhanced About Section */
 .about {
     padding: 5rem 0;
